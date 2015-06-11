@@ -31,6 +31,14 @@ JNIEXPORT void JNICALL Java_com_lkspencer_kirk_face_api_FaceLib_StopLearning
 JNIEXPORT jboolean JNICALL Java_com_lkspencer_kirk_face_api_FaceLib_DetectMatch
   (JNIEnv *, jclass, jstring);
 
+/*
+ * Class:     com_lkspencer_kirk_face_api_FaceLib
+ * Method:    HelloJni
+ * Signature: ()[C
+ */
+JNIEXPORT jstring JNICALL Java_com_lkspencer_kirk_face_api_FaceLib_HelloJni
+  (JNIEnv *, jclass);
+
 #ifdef __cplusplus
 }
 #endif

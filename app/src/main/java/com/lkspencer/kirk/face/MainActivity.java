@@ -49,8 +49,8 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
     mOpenCvCameraView = (CameraBridgeViewBase) findViewById(R.id.HelloOpenCvView);
     mOpenCvCameraView.setVisibility(SurfaceView.VISIBLE);
     mOpenCvCameraView.setCvCameraViewListener(this);
-    boolean b = FaceLib.DetectMatch("asdf");
-    Toast.makeText(this, "value: " + b, Toast.LENGTH_LONG).show();
+    String message = FaceLib.HelloJni();
+    Toast.makeText(this, "value: " + message, Toast.LENGTH_LONG).show();
   }
 
   @Override

@@ -9,6 +9,7 @@ public class FaceLib {
   public native static void StartLearning(String name);
   public native static void StopLearning();
   public native static boolean DetectMatch(String name);
+  public native static String HelloJni();
 
   static {
     // name of the module from the Android.mk file
