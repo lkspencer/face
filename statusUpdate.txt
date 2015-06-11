@@ -1,0 +1,3 @@
+cloned directory, testing initial commit
+
+-added contributing.md file
