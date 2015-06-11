@@ -8,3 +8,4 @@ This is a proof of concept playground for testing out facial recognition softwar
 ## Developers
 - Kirk Spencer
 - Zac Coplan
+- BJ Atchley
