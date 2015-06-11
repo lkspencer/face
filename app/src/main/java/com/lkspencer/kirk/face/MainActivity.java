@@ -7,6 +7,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.SurfaceView;
 import android.view.WindowManager;
+import android.widget.Toast;
+
+import com.lkspencer.kirk.face.api.FaceLib;
 
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.CameraBridgeViewBase;
@@ -39,13 +42,15 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
-    Log.i(TAG, "called onCreate");
+      Log.i(TAG, "called onCreate");
     super.onCreate(savedInstanceState);
     getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     setContentView(R.layout.activity_main);
     mOpenCvCameraView = (CameraBridgeViewBase) findViewById(R.id.HelloOpenCvView);
     mOpenCvCameraView.setVisibility(SurfaceView.VISIBLE);
     mOpenCvCameraView.setCvCameraViewListener(this);
+    boolean b = FaceLib.DetectMatch("asdf");
+    Toast.makeText(this, "value: " + b, Toast.LENGTH_LONG).show();
   }
 
   @Override
