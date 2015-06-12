@@ -13,5 +13,5 @@ JNIEXPORT jboolean JNICALL Java_com_lkspencer_kirk_face_api_FaceLib_DetectMatch 
 }
 
 JNIEXPORT jstring JNICALL Java_com_lkspencer_kirk_face_api_FaceLib_HelloJni (JNIEnv *env, jclass clazz) {
-  return (*env)->NewStringUTF(env, "Hello JNI, C Rocks!");;
+  return (*env)->NewStringUTF(env, "Hello JNI, C Rocks! And so does Kirk...");;
 }
